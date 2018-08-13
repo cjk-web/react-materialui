@@ -16,11 +16,6 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
   card: {
     minWidth: 275,
   },
@@ -52,9 +47,6 @@ const styles = theme => ({
   title: {
     marginBottom: 16,
     fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
   },
 });
 
