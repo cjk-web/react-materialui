@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(255,152,0) !important;
+    margin-bottom: 20px; 
+}
+
+.page-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 8px;
+}
