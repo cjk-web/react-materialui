@@ -20,7 +20,7 @@ const styles = theme => ({
     minWidth: 275,
   },
   card2: {
-    minWidth: 275,
+    height: '100%',
   },
   card3: {
     display: 'flex',
