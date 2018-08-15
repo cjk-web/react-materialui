@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { Paper, Typography, Input, TextField } from '@material-ui/core';
+import { Paper, Typography, Input, TextField, Button } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -28,6 +28,9 @@ const styles = theme => ({
   message: {
     paddingTop: 20,
     marginBottom: 20,
+  },
+  button: {
+    margin: theme.spacing.unit,
   },
 });
 
@@ -57,6 +60,9 @@ function PaperSheet(props) {
                     'aria-label': 'Message',
                     }}
                 />
+                <Button variant="contained" color="primary" className={classes.button}>
+                    Submit
+                </Button>
             </div>
         </Paper>
     </div>
