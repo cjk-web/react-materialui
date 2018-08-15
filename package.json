@@ -12,7 +12,8 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "npm run dev",
+    "start": "react-scripts start",
+    "devstart": "npm run dev",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
