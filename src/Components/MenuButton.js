@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import IconButton from '@material-ui/core/IconButton';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
@@ -60,9 +61,8 @@ class MenuListComposition extends React.Component {
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleClose}>
                     <MenuList>
-                      <MenuItem onClick={this.handleClose}>About</MenuItem>
-                      <MenuItem onClick={this.handleClose}>Contact</MenuItem>
-                      <MenuItem onClick={this.handleClose}>Favorite</MenuItem>
+                      <MenuItem onClick={this.handleClose}><Link to="/Article">About</Link></MenuItem>
+                      <MenuItem onClick={this.handleClose}><Link to="/Contact">Contact</Link></MenuItem>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>

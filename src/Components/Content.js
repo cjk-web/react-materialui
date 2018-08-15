@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -26,8 +27,9 @@ const styles = theme => ({
     display: 'flex',
   },
   media: {
-    height: 0,
-    paddingTop: '56%',
+    minHeight: 160,
+    padding: 16,
+    //paddingTop: '56%',
     backgroundSize: '100%',
   },
   media2: {
@@ -47,6 +49,7 @@ const styles = theme => ({
   },
   actions: {
     background: '#F5F5F5',
+    color: 'rgb(117, 117, 117)',
   },
   title: {
     marginBottom: 16,
@@ -70,7 +73,7 @@ function CenteredGrid(props) {
                     />
                     <CardContent>
                     <Typography gutterBottom variant="headline" component="h2">
-                        This is a title.
+                        <Link to="/Article">This is a title.</Link>
                     </Typography>
                     <Typography component="p">
                         This is a paragraph. It has words and stuff that you can read. 
@@ -91,7 +94,7 @@ function CenteredGrid(props) {
                     />
                     </CardContent>
                     <CardActions className={classes.actions}>
-                    <Button size="small">A Button</Button>
+                    <Typography color="inherit">a card</Typography>
                     <MenuButton />
                     </CardActions>
                 </Card>
@@ -106,7 +109,7 @@ function CenteredGrid(props) {
                     <div className={classes.details}>
                     <CardContent>
                     <Typography gutterBottom variant="headline" component="h2">
-                        Here is another title.
+                      <Link to="/Article">Here is another title.</Link>
                     </Typography>
                     <Typography component="p">
                         Here are some more words to read. 

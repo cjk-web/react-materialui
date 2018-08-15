@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -26,6 +27,7 @@ const styles = {
       marginRight: 20,
     },
     list: {
+        marginTop: 60,
         width: 250,
       },
       logo: {
@@ -64,14 +66,14 @@ const styles = {
       const sideList = (
         <div className={classes.list}>
           <List>
-              <div>
+              <Link to="/">
                 <ListItem button>
                 <ListItemIcon>
                     <HomeIcon />
                 </ListItemIcon>
                 <ListItemText primary="Home" />
                 </ListItem>
-            </div>
+            </Link>
           </List>
         </div>
       );
@@ -93,7 +95,7 @@ const styles = {
                     {sideList}
                 </div>
               </Drawer>
-              <img className={classes.logo} src={window.location.origin + "/images/logo.svg"} alt="logo" />
+              <Link to="/"><img className={classes.logo} src={window.location.origin + "/images/logo.svg"} alt="logo" /></Link>
               {auth && (
                 <div>
                   

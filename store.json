@@ -1,0 +1,16 @@
+{
+    "articles": [
+      {
+        "id": "001",
+        "title": "Article 1",
+        "date": "August 15, 2018",
+        "content": "This is Article 1."
+      },
+      {
+        "id": "002",
+        "title": "Article 2",
+        "date": "August 16, 2018",
+        "content": "This is Article 2."
+      }
+    ]
+  }

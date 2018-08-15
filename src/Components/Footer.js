@@ -8,6 +8,7 @@ const styles = theme => ({
         backgroundColor: 'rgb(243, 243, 243)',
         padding: 32,
         marginTop: 8,
+        color: 'rgb(117, 117, 117)',
     },
 });
 
@@ -16,7 +17,7 @@ function Footer(props) {
 
     return (
         <footer className={classes.footer}>
-            <Typography variant="subheading" align="left">
+            <Typography variant="subheading" align="left" color="inherit">
                 footer
             </Typography>
         </footer>
