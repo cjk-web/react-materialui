@@ -13,9 +13,8 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
   root: {
     display: 'flex',
-  },
-  paper: {
-    marginRight: theme.spacing.unit * 2,
+    marginRight: 0,
+    marginLeft: 'auto',
   },
 });
 
@@ -52,19 +51,18 @@ class MenuListComposition extends React.Component {
           >
             <MoreVertIcon />
           </IconButton>
-          <Popper open={open} anchorEl={this.anchorEl} transition disablePortal>
+          <Popper open={open} anchorEl={this.anchorEl} placement="left-start" transition>
             {({ TransitionProps, placement }) => (
               <Grow
                 {...TransitionProps}
                 id="menu-list-grow"
-                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
               >
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleClose}>
                     <MenuList>
-                      <MenuItem onClick={this.handleClose}>Option 1</MenuItem>
-                      <MenuItem onClick={this.handleClose}>Option 2</MenuItem>
-                      <MenuItem onClick={this.handleClose}>Option 3</MenuItem>
+                      <MenuItem onClick={this.handleClose}>About</MenuItem>
+                      <MenuItem onClick={this.handleClose}>Contact</MenuItem>
+                      <MenuItem onClick={this.handleClose}>Favorite</MenuItem>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>

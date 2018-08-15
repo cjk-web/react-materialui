@@ -20,7 +20,7 @@ const styles = theme => ({
     minWidth: 275,
   },
   card2: {
-    height: '100%',
+    
   },
   card3: {
     display: 'flex',
@@ -28,21 +28,25 @@ const styles = theme => ({
   media: {
     height: 0,
     paddingTop: '56%',
+    backgroundSize: '100%',
+  },
+  media2: {
+    backgroundSize: '25%',
+    paddingTop: '100%',
   },
   cover: {
     height: 250,
     width: 250,
     padding: 8,
+    backgroundSize: '50%',
   },
+
   details: {
     display: 'flex',
     flexDirection: 'column',
   },
   actions: {
     background: '#F5F5F5',
-  },
-  menu: {
-    float: 'right',
   },
   title: {
     marginBottom: 16,
@@ -59,12 +63,12 @@ function CenteredGrid(props) {
         <Grid container spacing={24}>
             <Grid item xs={8}>
                 <Card className={classes.card}>
-                    <CardContent>
                     <CardMedia
                       className={classes.media}
-                      image="/static/images/logo.svg"
+                      image={window.location.origin + "/images/logo.svg"}
                       title="This is where the logo should go"
                     />
+                    <CardContent>
                     <Typography gutterBottom variant="headline" component="h2">
                         This is a title.
                     </Typography>
@@ -81,14 +85,14 @@ function CenteredGrid(props) {
                 <Card className={classes.card2}>
                     <CardContent>
                     <CardMedia
-                      className={classes.cover}
-                      image="/static/images/logo-mini.svg"
+                      className={classes.media2}
+                      image={window.location.origin + "/images/logo-mini.svg"}
                       title="This is an image"
                     />
                     </CardContent>
                     <CardActions className={classes.actions}>
                     <Button size="small">A Button</Button>
-                    <MenuButton className={classes.menu} />
+                    <MenuButton />
                     </CardActions>
                 </Card>
             </Grid>
@@ -96,7 +100,7 @@ function CenteredGrid(props) {
                 <Card className={classes.card3}>
                     <CardMedia
                       className={classes.cover}
-                      image="/static/images/logo.svg"
+                      image={window.location.origin + "/images/logo-mini.svg"}
                       title="This is an image"
                     />
                     <div className={classes.details}>
