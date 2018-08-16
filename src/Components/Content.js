@@ -40,7 +40,7 @@ const styles = theme => ({
     height: 250,
     width: 250,
     padding: 8,
-    backgroundSize: '100%',
+    backgroundSize: '90%',
   },
 
   details: {
