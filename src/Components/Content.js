@@ -40,7 +40,7 @@ const styles = theme => ({
     height: 250,
     width: 250,
     padding: 8,
-    backgroundSize: '50%',
+    backgroundSize: '100%',
   },
 
   details: {
@@ -68,7 +68,7 @@ function CenteredGrid(props) {
                 <Card className={classes.card}>
                     <CardMedia
                       className={classes.media}
-                      image={window.location.origin + "/images/logo.svg"}
+                      image={window.location.origin + "/images/landscape1.jpeg"}
                       title="This is where the logo should go"
                     />
                     <CardContent>
@@ -103,7 +103,7 @@ function CenteredGrid(props) {
                 <Card className={classes.card3}>
                     <CardMedia
                       className={classes.cover}
-                      image={window.location.origin + "/images/logo-mini.svg"}
+                      image={window.location.origin + "/images/landscape2.jpeg"}
                       title="This is an image"
                     />
                     <div className={classes.details}>
